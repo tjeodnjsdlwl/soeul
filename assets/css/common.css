@@ -1,0 +1,124 @@
+@import './font.css';
+
+body{
+    min-width: 1152px;
+    font-size: 15px;
+    color: #222;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.35em;
+}
+.blind, .sr-only{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+.common-inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+
+h2.sc-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+select{
+    background: url('../images/select-arrow.png');
+    background-size: 8px auto;
+    background-repeat: no-repeat;
+    background-position: 96% center;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .swiper {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    }
+    .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+    }
+
+    .link-logo::after,
+    .search-box .btn-search::after,
+    .btn:after,
+    .btn_pause::after,
+    .sc-board .btn-more,
+    .footer .fnumber,
+    .btn-all::after{
+        background: url('../images/icon_set_common.png');
+        background-repeat: no-repeat;
+    }
+    
+    
+    .slide-tab-nav .ic-slide-tab{
+        background:#fff url('../images/icon_main_2019.png');
+        background-repeat: no-repeat;
+    }
+
+
+
+    .mservices-list .ico-mservice{
+        background:#fff url('../images/icon_set_service.png');
+        background-repeat: no-repeat;
+    }
+
+    .sc-sns .sns-link,
+    .sc-sns .title::after{
+        background:url('../images/sns.png');
+        background-repeat: no-repeat;
+    }
+
+    .footer .fsns-link{
+        background:url('../images/footer-sns.png');
+        background-repeat: no-repeat;
+    }
+

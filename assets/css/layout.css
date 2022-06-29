@@ -1,0 +1,324 @@
+@import './reset.css';
+@import './common.css';
+
+
+/* header */
+
+.header{
+    position: relative;
+    height: 167px;
+}
+
+/* logo-area */
+.header .logo-area{
+    position: relative;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1.logo{
+    position: absolute;
+    left: 0;top: 8px;
+    width: 105px;height: 27px;
+}
+.link-logo::after{
+    content: '';
+    display: block;
+    width: 105px;
+    height: 27px;
+    background-position: -5px -165px;
+}
+.link-logo{
+    display: block;
+    height: 100%;
+}
+.gnb-box{
+    margin-left: 168px;
+}
+.gnb-list{
+    display: flex;
+    justify-content: start;
+}
+.gnb-item + .gnb-item{
+    margin-left: 20px;
+}
+.link-gnb{
+    display: block;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.link-gnb:hover, .link-login:hover {color: #2292e9;}
+
+.login-box{
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    font-weight: 700;
+}
+.link-login {
+    display: block;
+}
+.link-login + .link-login{
+    margin-left: 20px;
+}
+
+/* top-area */
+.top-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 119px;
+}
+h1.emblem{
+
+}
+.link-emblem{
+    display: block;
+}
+.link-emblem::after{
+    content: '';
+    display: block;
+    width: 178px;
+    height: 51px;
+    background: url('../images/emblem.png');
+}
+
+.search-box{
+    position: relative;
+    width: 460px;
+    height: 42px;
+    box-sizing: border-box;
+}
+.search-box .wrap{
+    position: relative;
+    border: 3px solid #2292e9;
+    box-sizing: border-box;
+}
+.search-box input{
+    width: 280px;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+}
+
+.search-box input[type=text]::placeholder{
+    color: #2292e9;
+}
+.search-box .btn-search{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.search-box .btn-search::after{
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-position: -32px -97px;
+    vertical-align: top;
+}
+.search-box .btn-keyboard{
+    position: absolute;
+    display: block;
+    margin: 0;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-box .btn-keyboard > img{
+    vertical-align: bottom;
+}
+
+.lang-box{
+    position: absolute;
+    top: 0;right: 0;
+    display: flex;
+    width: 110px;height: 21px;
+}
+.lang-box .lang-select{
+    width: 80px;
+    height: 21px;
+    border: 1px solid #afcfea;
+    color:#1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+}
+.lang-box .lang-select::after{
+    content: '';
+    width: 4px;height: 3px;
+}
+.lang-box .langGo-link{
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    font-size: 11px;
+    color: #fff;
+    background: #1e6cb3;
+    vertical-align: top;
+    text-align: center;
+}
+
+.weather-box{
+    width: 260px;
+    height: 85px;
+    margin-top: 34px;
+}
+.weather-banner{
+    position: absolute;
+    top: 29px;right: 0;
+}
+.weather-banner-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+    height: 80px;
+    background: url('../images/bg_weather_hot.png') no-repeat 0 0;
+}
+.weather-banner h2{
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+}
+.weather-banner em{
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.weather-banner .close{
+    position: absolute;
+    top: 0;right: 0;
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+}
+.weather-banner .close::after{
+    content: '';
+    position: absolute;
+    top: 5px;right: 5px;
+    width: 9px;height: 9px;
+    background: url('../images/btn_close_white.png') no-repeat 0 0;
+
+}
+
+.weather-box .link-weather{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+}
+.weather-box .link-air{
+    margin-top: 7px;
+    display: block;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+
+
+.footer{
+    position: relative;
+}
+.footer .gnb-footer-area{}
+.footer .fgnb-area{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .fgnb-list{
+    display: flex;
+    justify-content: start;
+    padding: 15px 0;
+}
+.footer .fgnb-items{
+    overflow: hidden;
+}
+.footer .fgnb-items + .fgnb-items::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #dcdcdc;
+    vertical-align: top;
+    margin: 0 10px;
+    margin-top: 2px;
+    float: left;
+}
+.footer .fgnb-link{
+    font-size: 12px;
+    color: #636363;
+}
+.footer .fgnb-link.policy{
+    color: #000;
+    font-weight: 700;
+}
+
+.footer .fsns-area{
+    display: flex;
+}
+.footer .fsns-link{
+    width: 24px;
+    height: 24px;
+}
+.footer .fsns-link + .fsns-link {
+    margin-left: 12px;
+}
+.footer .ic-facebook{background-position: -25px 0px;}
+.footer .ic-twittere{background-position: -50px 0}
+.footer .ic-insta{background-position: -75px 0}
+.footer .ic-kakaostory{background-position:-100px 0}
+.footer .ic-youtube{background-position:-125px 0}
+.footer .ic-blog{background-position:-150px 0}
+
+.footer .ic-facebook:hover{background-position: -25px -25px;}
+.footer .ic-twittere:hover{background-position: -50px -25px}
+.footer .ic-insta:hover{background-position: -75px -25px}
+.footer .ic-kakaostory:hover{background-position:-100px -25px}
+.footer .ic-youtube:hover{background-position:-125px -25px}
+.footer .ic-blog:hover{background-position:-150px -25px}
+
+.footer .corp-area{
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.footer .fnumber{
+    margin-right: 40px;
+    width: 108px;
+    height: 45px;
+    background-position: -180px 0;
+}
+.address{
+    flex: 1;
+    font-size: 12px;
+}
+.address .addr{
+    font-weight: 500;
+    line-height: 12px;
+}
+.address .number{padding-top: 2px;color: #636363;}
+.address .copy{
+    display: block;
+    font-size: 11px;
+    padding-top: 2px;
+}
+
+.footer .mark-area{
+    display: flex;
+    justify-content: end;
+}
+.footer .mark-link{
+    display: block;
+    height: 100%;
+}
+.footer .mark-area .web{
+    margin-left: 10px;
+}
